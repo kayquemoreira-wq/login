@@ -16,8 +16,11 @@ if (!isset($_SESSION["usuario"])) {
     <title>Painel</title>
 </head>
 <body>
-    <h1>Bem-vindo, <?php htmlspecialchars($_SESSION["usuario"]) ?></h1>
-    <p>Esta página é secreta. Só quem faz login consegue ver.</p>
-    <a href="sair.php">Sair</a>
+    <main class="cartao">
+        <span class="selo">Àrea secreta</span>
+        <h1>Bem-vindo, <?php htmlspecialchars($_SESSION["usuario"]) ?></h1>
+        <p class="subtitulo">Esta página é secreta. Só quem faz login consegue ver.</p>
+        <a class="botao-sair" href="sair.php">Sair</a>
+    </main>
 </body>
 </html>

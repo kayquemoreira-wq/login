@@ -34,12 +34,16 @@ if ($usuario === "") {
     <title>Cadastro</title>
 </head>
 <body>
-    <h1>Criar conta</h1>
-    <form method="post">
-        <p><input type="text" name="usuario" placeholder="Escolher um usuário"></p>
-        <p><input type="password" name="senha" placeholder="Escolher uma senha"></p>
-        <button>Cadastrar</button>
-    </form>
-    <p><a href="login.php">Já tenho conta</a></p>
+    <main class="cartao">
+        <h1>Criar conta</h1>
+        
+        <p class="subtitulo">Escolha um usuario e uma senha</p>
+        <form method="post">
+            <p><input type="text" name="usuario" placeholder="Escolher um usuário"></p>
+            <p><input type="password" name="senha" placeholder="Escolher uma senha"></p>
+            <button>Cadastrar</button>
+        </form>
+        <p class="links"><a href="login.php">Já tenho conta</a></p>
+    </main>
 </body>
 </html>
